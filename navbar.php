@@ -8,7 +8,11 @@
                 <li class="nav-item"><a class="nav-link" href="index.php">HOME</a></li>
                 <li class="nav-item"><a class="nav-link" href="quota.php">QUOTA</a></li>
                 <li class="nav-item"><a class="nav-link" href="about.php">ABOUT</a></li>
-                <li class="nav-item"><a class="nav-link" href="login.php">SIGN IN</a></li>
+                <?php if (isset($_SESSION['user'])) : ?>
+                    <li class="nav-item"><a class="nav-link" href="logout.php">LOG OUT</a></li>
+                <?php else : ?>
+                    <li class="nav-item"><a class="nav-link" href="login.php">SIGN IN</a></li>
+                <?php endif; ?>
             </ul>
         </div>
     </div>
