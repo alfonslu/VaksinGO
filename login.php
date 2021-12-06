@@ -28,7 +28,7 @@ if (isset($_POST['login'])) {
             session_start();
             $_SESSION["user"] = $user;
             // login sukses, alihkan ke halaman timeline
-            header("Location: timeline.php");
+            header("Location: index.php");
         }
     }
 }
@@ -50,7 +50,7 @@ if (isset($_POST['login'])) {
         <div class="row">
             <div class="col-md-6">
 
-                <p>&larr; <a href="index.php">Home</a>
+                <a href="index.php">&larr;Home</a>
 
                 <h4>Masuk ke VaksinGO</h4>
                 <p>Belum punya akun? <a href="register.php">Daftar di sini</a></p>
