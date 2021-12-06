@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+.orange{
+    color: #FF5C2A;
+}
+
+.bg-orange{
+    background-color: #FF5C2A;
+}
+
+.btn-primary{
+    background-color: #FF5C2A;
+    border: 1px #FF5C2A solid;
+}
+
+.btn-primary:hover{
+    background-color: #FF5C2A;
+    border: 1px #FF5C2A solid;
+}
+
+.emp{
+    color: #FF5C2A;
+}
