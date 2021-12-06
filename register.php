@@ -84,7 +84,7 @@ if (isset($_POST['register'])) {
                         <input class="form-control" type="password" name="password" placeholder="Password" />
                     </div>
 
-                    <input type="submit" class="btn btn-success btn-block" name="register" value="Daftar" />
+                    <input type="submit" class="btn btn-primary btn-block" name="register" value="Daftar" />
 
                 </form>
 
