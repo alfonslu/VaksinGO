@@ -1,3 +1,7 @@
+<?php
+require_once('auth.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,9 +21,9 @@
         <div class="mt-5">
             <div class="d-flex flex-row">
                 <div class="my-auto">
-                    <h1 class="display-3 bold">Get your <span class="emp">vaccine</span>,</br>get your health</h1>
-                    <p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam, dolorum eligendi quo id architecto error. Placeat quis distinctio, officia, esse earum ipsam, rerum ullam quam cum quas quae repudiandae dignissimos.</p>
-                    <button class="btn btn-primary" onclick="">Get Vaccinated</button>
+                    <h1 class="display-3 bold">Get your <span class="emp">vaccine</span>,</br>get your health.</h1>
+                    <p class="lead">Get your body vaccinated, now! Available in Semarang.</p>
+                    <a class="btn btn-primary" href="book_vaccine.php">Get Vaccinated</a>
                 </div>
                 <div class="hero">
                     <img src="img/hero.png" alt="">
@@ -65,6 +69,10 @@
                 </div>
             </div>
         </div>
+    </section>
+
+    <section class="container">
+
     </section>
 
 </body>
