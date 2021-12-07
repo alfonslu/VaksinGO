@@ -65,7 +65,7 @@ if (isset($_POST['login'])) {
 
                 <h4>Daftar Vaksin melalui VaksinGO</h4>
 
-                <form action="" method="POST">
+                <form action="Booked.php" method="POST">
 
                     <div class="form-group">
                         <label for="nik">NIK</label>
@@ -80,19 +80,14 @@ if (isset($_POST['login'])) {
                     <div class="form-group">
                         <label for="vaccine">Vaccine</label><br>
                         <?php
-                        for ($i = 0; $i < "LENGTH()"; $i++) {
-                            echo '<input type="radio" id="$vaccine" name="vaccine" value="$vaccine">';
-                            echo '<label for="$vaccine">$vaccine</label>';
-                        }
+                            $vaccine=array("Sinovac","Pfizer","Astrazeneca","Sinopharm");
+                            sizeof($vaccine,1);
                         ?>
-                        <input type="radio" id="sinovac" name="vaccine" value="1">
-                        <label for="sinovac">Sinovac</label>
-                        <input type="radio" id="Pfizer" name="vaccine" value="2">
-                        <label for="Pfizer">Pfizer</label>
-                        <input type="radio" id="astrazenica" name="vaccine" value="3">
-                        <label for="astrazenica">AstraZenica</label>
-                        <input type="radio" id="sinopharm" name="vaccine" value="4">
-                        <label for="sinopharm">Sinopharm</label>
+                        <b> Pilih jenis vaksin : </b><br>
+                            <input type="radio" name="vaksin" value="Sinovac">Sinovac
+                            <input type="radio" name="vaksin" value="Sinovac">Pfizer
+                            <input type="radio" name="vaksin" value="Sinovac">Astrazeneca
+                            <input type="radio" name="vaksin" value="Sinovac">Sinopharm
                     </div>
 
                     <div class="form-group">
@@ -105,7 +100,7 @@ if (isset($_POST['login'])) {
                         </select>
                     </div>
 
-                    <input type="submit" class="btn btn-primary btn-block" name="login" value="Masuk" />
+                    <input type="submit" class="btn btn-primary btn-block" name="login" value="Daftar Vaksinasi" />
 
                 </form>
 
@@ -116,5 +111,9 @@ if (isset($_POST['login'])) {
     </div>
 
 </body>
+
+<?php
+include("footer.php")
+?>
 
 </html>
