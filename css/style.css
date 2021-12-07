@@ -13,13 +13,11 @@
 }
 
 .btn-primary{
-    color: white;
     background-color: #FF5C2A;
     border: 1px #FF5C2A solid;
 }
 
 .btn-primary:hover{
-    color: white;
     background-color: #FF5C2A;
     border: 1px #FF5C2A solid;
 }
@@ -27,3 +25,21 @@
 .emp{
     color: #FF5C2A;
 }
+
+ul {
+    padding:0 0 0 0;
+    margin:0 0 0 0;
+    }
+    ul li {
+    list-style:none;
+    margin-bottom:25px;
+    }
+    ul li img {
+    cursor: pointer;
+    }
+
+footer{
+    font-family: 'Libre Franklin', sans-serif;
+    background-color: #dfdfdf;
+    color: rgb(0, 0, 0);
+    }
